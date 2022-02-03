@@ -1,0 +1,50 @@
+.green{
+    background-color: green;
+    width: 100%;
+    height:100vh; 
+    cursor: pointer;   
+}
+.display, h1, span{
+    color:rgb(218, 241, 183);
+}
+.container{
+    margin-left: 36%;
+    width: 28%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   
+}
+.box{
+    border:1px solid black;
+    width: 100%;
+    height: 16vh;
+    color:rgb(218, 241, 183);
+    font-size: 100px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    padding-top: 30px;
+}
+.display, .controls{
+    text-align: center;
+}
+.display{
+    font-size: 20px;
+}
+#restart{
+    padding:6px;
+    background-color: cadetblue;
+    color:rgb(218, 241, 183);
+    font-size: 18px;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+ #restart:hover {
+    color:green;
+    background-color: ivory;
+}
+.display-player{
+    color:rgb(218, 241, 183);
+}
+ 
