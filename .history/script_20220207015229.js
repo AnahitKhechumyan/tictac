@@ -58,15 +58,18 @@ const finish = (type) => {
 
 function handleResultValidation() {
     let roundWon = false;
-    for(let i = 0; i<=7; i++){
-        const winCondition = winningConditions[i]; 
-        if(field[winCondition[0]] === "" || field[winCondition[1]] === "" || field[winCondition[2]] === ""){
-            continue;
-        }
-        if( field[winCondition[0]]=== field[winCondition[1]] && field[winCondition[1]] === field[winCondition[2]]){
-            roundWon = true;
-            break;
-        }
+    for (let i = 0; i <= 7; i++) {
+      const winCondition = winningConditions[i];
+      const a = field[winCondition[0]];
+      const b = field[winCondition[1]];
+      const c = field[winCondition[2]];
+      if (a === "" || b === "" || c === "") {
+        continue;
+      }
+      if (a === b && b === c) {
+        roundWon = true;
+        break;
+      }
     }
   
     if (roundWon) {
